@@ -1,0 +1,114 @@
+.navbar {
+    height: 6.5rem;
+    width: 100%;
+    border: lightgray solid 1px;
+
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: var(--gray-light-2);
+        align-items: center;
+        
+        
+        
+
+        
+
+        &_logo {
+            display: flex;
+            align-items: flex-start;
+            align-self: center;
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+
+        &_menu {
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            
+            &-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                & li {
+                    list-style: none;
+                    font-size: 1.9rem;
+                    text-transform: uppercase;
+                    padding: 1.72rem;
+                    align-items: center;
+                }
+
+                & li:hover {
+                    background-color: lightgrey;
+                    color: var(--gray-dark-2);
+                }
+            }
+        }
+    }
+
+}
+
+#home {
+    height: 100vh;
+    background-image: linear-gradient( rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url(../img/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+
+    
+}
+.home_info {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--gray-light-2);
+    margin-top: -5rem;
+    
+        
+    &-greet {
+        font-size: 2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &-main {
+        font-size: 3rem;
+        text-transform: capitalize;
+        color: var(--gray-light-2);
+        
+    }
+
+    &-main span {
+        display: block;
+        margin-top: -20px;
+        
+    }
+
+    &-button a {
+        font-size: 2rem;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: var( --color-primary-light);
+        padding: 1rem 2rem;
+        color: var(--gray-light-2);
+        border-radius: 5px;
+
+        &:hover {
+            background-color: lightseagreen;
+            
+        }
+    }
+}
+
+#service {
+    height: 90rem;
+    background-color: var(--gray-light-2);
+    color: var(--color-primary-dark);
+}

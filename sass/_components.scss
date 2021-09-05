@@ -1,0 +1,58 @@
+.service_heading {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-top: 6rem;
+
+    & h1 {
+        font-size: 5rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    &_section {
+        
+        text-align: center;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: lightgray solid 1px;
+        margin: 2rem;
+        cursor: pointer;
+
+        color: var(--gray-dark-1);
+        
+
+        &_logo {
+            height: 50%;
+            width: 100%;
+            padding-top: 2rem;
+            color: lightseagreen;
+           
+        }
+
+        &_name {
+            font-size: 2rem;
+            font-weight: normal;
+            
+        }
+
+        &_brief {
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+
+        &_button a {
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    }
+}
